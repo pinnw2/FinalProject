@@ -4,24 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IdentityPage">
+    tools:context=".IdentityPage"
+    tools:layout_editor_absoluteY="81dp">
 
     <LinearLayout
-        android:layout_width="352dp"
-        android:layout_height="55dp"
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="123dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp">
+        app:layout_constraintBottom_toTopOf="@+id/AgeRangeSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/maleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Male" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/femaleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -30,19 +40,46 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="384dp"
-        android:layout_height="314dp"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
         android:adjustViewBounds="true"
         android:visibility="visible"
-        app:srcCompat="@android:color/holo_blue_dark"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="211dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AgeRangeSpinner"
+        app:srcCompat="@android:color/holo_blue_dark" />
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/AgeRangeSpinner"
         android:layout_width="215dp"
-        android:layout_height="92dp"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="98dp" />
+        android:layout_height="71dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:requiresFadingEdge="horizontal"
+        android:scrollbars="vertical"
+        android:spinnerMode="dropdown"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="291dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/newarr" />
 
 </android.support.constraint.ConstraintLayout>

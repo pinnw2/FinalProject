@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StylePageMen">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/menStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please choose your favourite style."
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/businessMen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/business" />
+
+        <Button
+            android:id="@+id/summerMen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/summer_vacation" />
+
+        <Button
+            android:id="@+id/winterMen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/winter_wear" />
+
+        <Button
+            android:id="@+id/streetMen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/street_style" />
+
+        <Button
+            android:id="@+id/nightMen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/night_out" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="543dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:srcCompat="@android:color/holo_blue_light"
+        tools:layout_editor_absoluteX="-80dp" />
+
+</android.support.constraint.ConstraintLayout>
