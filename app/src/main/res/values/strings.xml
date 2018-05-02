@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string name="summer_vacation">Summer Vacation</string>
+    <string name="winter_wear">winter wear</string>
+    <string name="business">business</string>
+    <string name="street_style">street style</string>
+    <string name="night_out">night out</string>
+
+    <string-array name="AgeRange">
+        <item>Teen</item>
+        <item>Adult</item>
+        <item>Senior</item>
+    </string-array>
+</resources>
